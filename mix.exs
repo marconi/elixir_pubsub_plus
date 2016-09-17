@@ -2,7 +2,7 @@ defmodule PubSubPlus.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :pubsubplus,
+    [app: :pubsub_plus,
      version: "0.0.1",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,

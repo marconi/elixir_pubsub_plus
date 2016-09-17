@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :pubsubplus, key: :value
+#     config :pubsub_plus, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:pubsubplus, :key)
+#     Application.get_env(:pubsub_plus, :key)
 #
 # Or configure a 3rd-party app:
 #
