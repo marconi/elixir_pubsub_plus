@@ -22,3 +22,18 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
     end
     ```
 
+## Usage
+
+```elixir
+iex(1)> {:ok, _} = PubSubPlus.start_link()
+{:ok, #PID<0.188.0>}
+iex(2)> PubSubPlus.subscribe(self, "do.something.stupid")
+{:ok, nil}
+iex(3)> PubSubPlus.publish("do.something", {:message, "Take a walk"})
+{:ok, nil}
+iex(4)> flush()
+{:message, "Take a walk"} # <- do
+{:message, "Take a walk"} # <- do.something
+:ok
+```
+
